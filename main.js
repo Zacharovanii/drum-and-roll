@@ -84,13 +84,10 @@ function sendFormData(name, phone, option, message) {
 	formData.append("option", option);
 	formData.append("text", message);
 
-	fetch(
-		"https://thingproxy.freeboard.io/fetch/http://150.241.71.43:8000/send-message/",
-		{
-			method: "POST",
-			body: formData,
-		}
-	)
+	fetch("https://f702-2a0b-4140-b05a-00-2.ngrok-free.app/send-message/", {
+		method: "POST",
+		body: formData,
+	})
 		.then((response) => response.json())
 		.then((data) => {
 			if (data.status === "success") {
