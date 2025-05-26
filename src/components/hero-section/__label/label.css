@@ -1,0 +1,15 @@
+.hero-section__label {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	height: 100%;
+	width: calc(50% - 40px);
+}
+
+@media screen and (max-width: 600px) {
+	.hero-section__label {
+		width: 90%;
+	}
+}

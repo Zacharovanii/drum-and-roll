@@ -1,0 +1,21 @@
+@import url("__about/about.css");
+@import url("__header/header.css");
+@import url("__image/image.css");
+@import url("__label/label.css");
+@import url("__sign-up/sign-up.css");
+
+.hero-section {
+	min-height: 90vh;
+	margin-bottom: 40px;
+	height: max-content;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	position: relative;
+	width: 100%;
+	/* flex-basis: 700px; */
+	justify-content: space-between;
+	align-items: center;
+}

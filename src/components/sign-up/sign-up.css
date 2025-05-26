@@ -1,0 +1,156 @@
+.sign-up {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.sign-up__header {
+	width: 55vw;
+	min-width: 290px;
+	margin-bottom: 35px;
+}
+
+.sign-up__title {
+	font-size: var(--font-size-xxxl);
+}
+
+.sign-up__tag {
+	color: var(--secondary-text);
+	font-size: var(--font-size-lg);
+}
+
+.sign-up__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	width: 55vw;
+	min-width: 290px;
+
+	gap: 40px;
+}
+
+.sign-up__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 100%;
+	gap: 30px;
+	height: max-content;
+}
+
+.sign-up__form-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+
+	width: 100%;
+}
+
+.sing-up__label {
+	font-size: var(--font-size-lg);
+	font-weight: bold;
+
+	width: 100%;
+}
+
+.sing-up__input,
+.sing-up__select,
+.sing-up__textarea,
+.sing-up__submit-button {
+	padding: 15px 30px;
+	/* width: 50vw; */
+	min-width: 200px;
+
+	background-color: var(--card-background);
+	font-size: var(--font-size-md);
+	color: white;
+
+	border: 1px solid transparent;
+	border-radius: var(--radius);
+}
+
+.sing-up__select option {
+	background-color: black;
+}
+
+.sing-up__textarea {
+	resize: vertical;
+	min-height: 10vh;
+}
+
+.sign-up__submit {
+	width: 100%;
+}
+
+.sing-up__submit-button {
+	width: 100%;
+
+	background-color: var(--primary);
+	font-size: var(--font-size-lg);
+	color: white;
+
+	&:hover {
+		scale: 1.1;
+	}
+}
+
+.sing-up__link {
+	color: var(--secondary-text);
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 30px;
+}
+
+.contacts__title {
+	font-size: var(--font-size-xxxl);
+	margin: 0;
+	padding: 0;
+}
+
+.contacts__tag {
+	font-size: var(--font-size-xxl);
+}
+
+.contacts__desc {
+	font-size: var(--font-size-xl);
+}
+
+.contacts__phones,
+.contacts__email-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.contacts__email,
+.contacts__phone {
+	font-size: var(--font-size-lg);
+	font-weight: bold;
+
+	padding-left: 20px;
+}
+
+.contacts__addres-container {
+	margin: 10px 0;
+}
+
+.contacts__address {
+	display: block;
+	margin: 20px 0;
+	font-size: var(--font-size-lg);
+	font-weight: bold;
+}
+
+.contacts__map {
+	aspect-ratio: 1/1;
+	width: 100%;
+}

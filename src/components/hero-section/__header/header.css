@@ -1,0 +1,19 @@
+.hero-section__header {
+	font-size: calc(var(--font-size-xxxl) + 1rem);
+	color: var(--primary);
+
+	text-shadow: 0 0 8px var(--primary);
+}
+/* 
+@media (min-width: 600px) and (max-width: 780px) {
+	.hero-section__header {
+		font-size: calc(var(--font-size-xxxl) + 0.75rem);
+	}
+}
+
+@media (max-width: 600px) {
+	.hero-section__header {
+		font-size: calc(var(--font-size-xxxl) + 0.6rem);
+		word-break: keep-all;
+	}
+} */

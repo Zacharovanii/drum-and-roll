@@ -1,0 +1,20 @@
+.hero-section__sign-up {
+	padding: 10px 20px;
+	width: 90%;
+	font-size: var(--font-size-xxl);
+
+	background-color: var(--card);
+	color: var(--primary);
+	border: 2px solid var(--border);
+	border-radius: var(--radius);
+
+	cursor: pointer;
+	transition: background-color 0.5s ease, scale 0.5s ease;
+	box-shadow: 0px 0px 30px 0px var(--muted);
+
+	&:hover {
+		scale: 1.1;
+		background-color: var(--muted);
+		box-shadow: 0px 0px 10px 0px var(--muted-foreground);
+	}
+}

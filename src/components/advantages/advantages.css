@@ -1,0 +1,120 @@
+.advantages {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 100px;
+	height: max-content;
+
+	position: relative;
+}
+
+.advantages__header {
+	font-size: var(--font-size-xxxl);
+	width: 65%;
+}
+
+.advantages__header__accent {
+	color: var(--primary);
+}
+
+.advantages__grid-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	gap: 20px;
+}
+
+@media (max-width: 426px) {
+	.advantages__grid-wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 780px) {
+	.advantages__header {
+		width: auto;
+	}
+}
+
+.advantages__article {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+
+	background-color: var(--card-background);
+	border: 1px solid transparent;
+	border-radius: var(--radius);
+
+	min-height: 20vh;
+	padding: 25px;
+}
+
+.advantages__article__head {
+	height: 100%;
+	width: 90%;
+
+	position: relative;
+}
+
+.advantages__article__header {
+	padding: 0;
+	margin: 0;
+
+	font-size: var(--font-size-lg);
+	word-break: break-word;
+	hyphens: auto;
+}
+
+.advantages__article__icon {
+	max-height: 3.5rem;
+	aspect-ratio: 1 / 1;
+	padding: 7px;
+
+	background-color: var(--secondary-card-background);
+	border: 1px solid transparent;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 0.1px rgba(255, 255, 255, 0.203) inset;
+
+	position: absolute;
+	bottom: 0;
+}
+
+.advantages__article__content {
+	color: var(--secondary-text);
+	font-size: var(--font-size-md);
+
+	padding: 0;
+	margin: 0;
+}
+
+.advantages__blob {
+	width: 100vw;
+	position: absolute;
+	left: -20%;
+	top: 30%;
+	z-index: -1;
+
+	overflow: visible;
+	width: 440px;
+	height: 440px;
+	border-radius: 18rem;
+	background: radial-gradient(
+			77.73% 77.73% at 98.52% 96.25%,
+			#f98bda 0%,
+			rgba(128, 76, 239, 0.29) 50.52%,
+			rgba(91, 216, 216, 0) 100%
+		),
+		radial-gradient(
+			141.73% 105.23% at 50% -7.16%,
+			#e1f8ff -20%,
+			rgba(160, 198, 255, 0) 50.73%,
+			rgba(162, 147, 255, 0) 100%
+		),
+		radial-gradient(
+			112.27% 48.54% at 1.59% 50%,
+			rgba(255, 130, 227, 0.5) 0%,
+			rgba(255, 123, 234, 0.095) 53.91%,
+			rgba(254, 216, 255, 0) 100%
+		),
+		linear-gradient(153.07deg, #8177f3 6.37%, rgba(255, 230, 166, 0) 83.82%);
+	background-blend-mode: normal, normal, normal, normal, normal, normal;
+	filter: blur(100px);
+}
