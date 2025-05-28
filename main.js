@@ -84,7 +84,7 @@ function sendFormData(name, phone, option, message) {
 	formData.append("option", option);
 	formData.append("text", message);
 
-	fetch("https://f702-2a0b-4140-b05a-00-2.ngrok-free.app/send-message/", {
+	fetch("https://794f-2a0b-4140-b05a-00-2.ngrok-free.app/send-message/", {
 		method: "POST",
 		body: formData,
 	})
