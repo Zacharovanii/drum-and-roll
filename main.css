@@ -10,6 +10,7 @@
 @import url("src/components/pricing/pricing.css");
 @import url("src/components/sign-up/sign-up.css");
 @import url("src/components/footer/footers.css");
+@import url("src/components/slider.css");
 
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");

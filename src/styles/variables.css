@@ -32,9 +32,9 @@
 	--sidebar-border: oklch(1 0 0 / 10%);
 	--sidebar-ring: oklch(0.645 0.246 16.439);
 
-	--font-size-xs: 0.75rem;
-	--font-size-sm: 0.875rem;
-	--font-size-md: 1rem;
+	--font-size-xs: 0.875rem;
+	--font-size-sm: 1rem;
+	--font-size-md: 1.5rem;
 	--font-size-lg: 1.125rem;
 	--font-size-xl: 1.5rem;
 	--font-size-xxl: 2rem;
