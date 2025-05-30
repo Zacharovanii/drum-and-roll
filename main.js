@@ -144,33 +144,41 @@ document.getElementById("link-learning").addEventListener("click", () => {
 document.getElementById("link-pricing").addEventListener("click", () => {
 	smoothScrollTo("pricing");
 });
+// Находим контейнер со слайдами
+function createSlider(sliderElement) {
+	const slides = sliderElement.querySelector(".slides");
+	const slideCount = sliderElement.querySelectorAll(".slide").length;
+	const prevButton = sliderElement.querySelector(".prev");
+	const nextButton = sliderElement.querySelector(".next");
 
-const slides = document.querySelector(".slides");
-const slide = document.querySelectorAll(".slide");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+	let currentIndex = 0;
+	let autoPlayInterval;
 
-let currentIndex = 0;
-const totalSlides = slide.length;
+	function goToSlide(index) {
+		if (index < 0) {
+			index = slideCount - 1;
+		} else if (index >= slideCount) {
+			index = 0;
+		}
+		currentIndex = index;
+		slides.style.transform = `translateX(${-index * 100}%)`;
+	}
 
-function updateSliderPosition() {
-	slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+	prevButton.addEventListener("click", () => goToSlide(currentIndex - 1));
+	nextButton.addEventListener("click", () => goToSlide(currentIndex + 1));
+
+	function startAutoPlay() {
+		autoPlayInterval = setInterval(() => goToSlide(currentIndex + 1), 3000);
+	}
+
+	function stopAutoPlay() {
+		clearInterval(autoPlayInterval);
+	}
+
+	startAutoPlay();
+	sliderElement.addEventListener("mouseenter", stopAutoPlay);
+	sliderElement.addEventListener("mouseleave", startAutoPlay);
 }
 
-nextBtn.addEventListener("click", () => {
-	if (currentIndex < totalSlides - 1) {
-		currentIndex++;
-	} else {
-		currentIndex = 0; // Возврат к первому слайду
-	}
-	updateSliderPosition();
-});
-
-prevBtn.addEventListener("click", () => {
-	if (currentIndex > 0) {
-		currentIndex--;
-	} else {
-		currentIndex = totalSlides - 1; // Переход на последний слайд
-	}
-	updateSliderPosition();
-});
+// Инициализируем все слайдеры на странице
+document.querySelectorAll(".slider").forEach(createSlider);

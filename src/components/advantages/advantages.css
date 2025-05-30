@@ -64,8 +64,9 @@
 }
 
 .advantages__article__icon {
-	max-height: 3.5rem;
-	aspect-ratio: 1 / 1;
+	height: 4rem;
+	width: 4rem;
+	/* aspect-ratio: 1 / 1; */
 	padding: 7px;
 
 	background-color: var(--secondary-card-background);

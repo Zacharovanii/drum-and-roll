@@ -134,7 +134,7 @@
 	margin-right: 10px;
 	padding: 0;
 
-	font-size: var(--font-size-xl);
+	font-size: var(--font-size-xxl);
 }
 
 .learning__card__content {
@@ -142,6 +142,7 @@
 	margin: 0;
 
 	color: var(--secondary-text);
+	font-size: var(--font-size-md);
 }
 
 @media (max-width: 426px) {
